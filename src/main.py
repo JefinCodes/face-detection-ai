@@ -1,4 +1,5 @@
 import cv2
+import time
 
 
 # Open the default webcam
@@ -11,6 +12,9 @@ face_cascade = cv2.CascadeClassifier(
 
 
 while True:
+
+    start_time = time.time()
+
     # Capture one frame
     success, frame = camera.read()
 
@@ -37,10 +41,14 @@ while True:
             (255, 0, 0),
             2
         )
+        
+    end_time = time.time()
+    
+    fps = 1 / (end_time - start_time)
 
     cv2.putText(
         frame,
-        f"Faces: {len(faces)}",
+        f"FPS: {fps:.1f}",
         (20, 40),
         cv2.FONT_HERSHEY_SIMPLEX,
         1,
