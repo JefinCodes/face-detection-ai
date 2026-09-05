@@ -10,7 +10,7 @@ CONFIDENCE_THRESHOLD = 0.5
 # Load face detection model
 # -------------------------
 
-model = YOLO("models/yolo26n-face.pt")
+model = YOLO("models/best.pt")
 
 
 # -------------------------

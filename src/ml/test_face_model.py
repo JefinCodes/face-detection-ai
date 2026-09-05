@@ -2,7 +2,7 @@ from ultralytics import YOLO
 
 
 # Load face detection model
-model = YOLO("models/yolo26n-face.pt")
+model = YOLO("models/best.pt")
 
 
 # Run inference

@@ -1,0 +1,7 @@
+path: /home/jefincodes/projects/face-detection-ai/data/face_dataset
+
+train: images/train
+val: images/val
+
+names:
+  0: face
