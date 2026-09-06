@@ -5,4 +5,5 @@ __pycache__/
 data/widerface
 data/face_dataset/images
 data/face_dataset/labels
+data/afw/extracted
 
